@@ -83,7 +83,7 @@ BEGIN
     
     IF @diferenca > 300 OR @evento = 'ALTERACAO_HORARIO'
     BEGIN
-        PRINT '🚨 ALERTA CRÍTICO: IMEI ' + @imei + ' - Diferença: ' + CAST(@diferenca AS VARCHAR) + 's';
+        PRINT ' ALERTA CRÍTICO: IMEI ' + @imei + ' - Diferença: ' + CAST(@diferenca AS VARCHAR) + 's';
         -- Aqui você pode adicionar lógica para enviar email, SMS, etc.
     END
 END;
